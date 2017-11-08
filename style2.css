@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Karla|Merriweather');
 /* For Sidebar*/
 body, html {
     height: 100%;
     margin: 0;
     overflow:hidden;
-    font-family: helvetica;
+    font-family: 'Karla', sans-serif;
     font-weight: 100;
 }
 .container {
