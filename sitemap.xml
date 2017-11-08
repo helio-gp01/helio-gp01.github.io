@@ -4,10 +4,31 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
 
 <url>
   <loc>https://helio-gp01.github.io/</loc>
   <lastmod>2017-11-08T09:08:38+00:00</lastmod>
+</url>
+<url>
+  <loc>https://helio-gp01.github.io/asthma.html</loc>
+</url>
+<url>
+  <loc>https://helio-gp01.github.io/basic_cuts_bruises_and_burns.html</loc>
+</url>
+<url>
+  <loc>https://helio-gp01.github.io/chronic_conditions.html</loc>
+
+</url>
+<url>
+  <loc>https://helio-gp01.github.io/common_illnesses.html</loc>
+ 
+</url>
+<url>
+  <loc>https://helio-gp01.github.io/diabetes.html</loc>
+ 
+</url>
+<url>
+  <loc>https://helio-gp01.github.io/doctors_near_you.html</loc>
 </url>
 </urlset>
