@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans');
+
+body {
+background-color: rgb(21, 21, 21);
+font-family: font-family: 'Arimo', sans-serif;
+font-size: 18px;
+}
+
+h1 {
+color: white;
+background-color: background-color: rgb(21, 21, 21);
+font-family: 'Open Sans', sans-serif;
+font-size: 26px;
+text-align: center;
+}
+
+p {
+background-color: background-color: rgb(21, 21, 21);
+font-family: 'Arimo', sans-serif;
+font-size: 16px;
+text-align: left;
+color: white;
+}
+
+a:link {
+color: rgb(221,212,83);
+font-family: 'Arimo', sans-serif;
+font-size: 16px;
+text-decoration: none; 
+}
+
+
+a:visited {
+
+color: rgb(221,212,83);
+font-family: 'Arimo', sans-serif;
+font-size: 16px;
+text-decoration: none; 
+}
+
+
+a:hover {
+color: rgb(0,175,0);
+font-family: 'Arimo', sans-serif;
+font-size: 16px;
+text-decoration: none; 
+}
+
+
+a:active {
+color: rgb(229,229,64);
+font-family: 'Arimo', sans-serif;
+font-size: 16px;
+text-decoration: none; 
+}
