@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Arimo|Karla|Merriweather');
 
 body {
 background-color: rgb(21, 21, 21);
@@ -9,7 +9,7 @@ font-size: 18px;
 h1 {
 color: white;
 background-color: background-color: rgb(21, 21, 21);
-font-family: 'Open Sans', sans-serif;
+font-family: 'Merriweather', serif;
 font-size: 26px;
 text-align: center;
 }
