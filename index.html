@@ -58,6 +58,12 @@ font-size: 16px;
 text-decoration: none; 
 }
 </style>
+	
+<link href="//customer.cludo.com/css/overlay/cludo-search-default.min.css" type="text/css" rel="stylesheet">
+<!--[if lte IE 9]>
+<script src="https://api.cludo.com/scripts/xdomain.js" slave="https://api.cludo.com/proxy.html" type="text/javascript"></script>
+<![endif]-->	
+	
 </head>
 
 <title>Hmmmm...</title>
@@ -96,6 +102,29 @@ text-decoration: none;
 </tr>
 </table>
 <!-- end of freefind search box html -->
+	
+<script type="text/javascript" src="//customer.cludo.com/scripts/bundles/search-script.min.js"></script>
+<script>
+var CludoSearch;
+(function () {
+    var cludoSettings = {
+        customerId: 872,
+        engineId: 9211,
+        language: 'en',
+        type: 'standardOverlayWithDynamicSearchBox',
+        theme: { 
+            themeColor: '#5da1ce', 
+            themeBannerColor: {textColor: '#4d4d4d', backgroundColor: '#f2f2f2'}, 
+            borderRadius: 0, borderRadiusInput: 0,
+            searchBoxPosition: {align: 'right', x: 20, y: 20}
+        },		
+searchApiUrl: 'https://api-eu1.cludo.com/api/v3'
+    };
+CludoSearch= new Cludo(cludoSettings);
+CludoSearch.init();
+})();
+</script>
+</body>
 
 
 
