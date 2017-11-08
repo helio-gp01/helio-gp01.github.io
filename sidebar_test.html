@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Scripts for Swipeable Side Bar-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+  $("[data-toggle]").click(function() {
+    var toggle_el = $(this).data("toggle");
+    $(toggle_el).toggleClass("open-sidebar");
+  });
+     
+});
+ 
+$(".swipe-area").swipe({
+    swipeStatus:function(event, phase, direction, distance, duration, fingers)
+        {
+            if (phase=="move" && direction =="right") {
+                 $(".container").addClass("open-sidebar");
+                 return false;
+            }
+            if (phase=="move" && direction =="left") {
+                 $(".container").removeClass("open-sidebar");
+                 return false;
+            }
+        }
+});
+	</script>
+	
+
+	
+	
+	
+	
+	
+	
+	<!--Cludo Search Script-->
+	<link href="//customer.cludo.com/css/overlay/cludo-search-default.min.css" type="text/css" rel="stylesheet">
+<!--[if lte IE 9]>
+<script src="https://api.cludo.com/scripts/xdomain.js" slave="https://api.cludo.com/proxy.html" type="text/javascript"></script>
+<![endif]-->
+	<!--End Cludo Search Script-->
+	
+  <title>Test</title>
+   <link rel="stylesheet" type="text/css" href="style2.css">
+  
+  <!--Divs for Sidebar-->
+<div class="container">
+    <div id="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Users</a></li>
+                <li><a href="#">Sign Out</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="swipe-area"></div>
+        <a href="#" data-toggle=".container" id="sidebar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+			
+        </a>
+        <div class="content">
+			<img src="usfmh.png">
+            <h1>Test</h1>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </div>
+    </div>
+</div>
+<!--End Divs for Sidebar-->
+
+</head>
+
+<header>
+<h1>Test</i></h1>
+</header>
+
+
+
+
+<body>
+
+<br><p>Hi there, what are you looking for? Enter in the form below. </p>
+
+<!--Cludo Search Box Script-->
+<script type="text/javascript" src="//customer.cludo.com/scripts/bundles/search-script.min.js"></script>
+<script>
+var CludoSearch;
+(function () {
+    var cludoSettings = {
+        customerId: 872,
+        engineId: 9211,
+        language: 'en',
+        type: 'standardOverlayWithDynamicSearchBox',
+        theme: { 
+            themeColor: '#5da1ce', 
+            themeBannerColor: {textColor: '#4d4d4d', backgroundColor: '#f2f2f2'}, 
+            borderRadius: 0, borderRadiusInput: 0,
+            searchBoxPosition: {align: 'left', x: 500, y: 500}
+        },		
+searchApiUrl: 'https://api-eu1.cludo.com/api/v3'
+    };
+CludoSearch= new Cludo(cludoSettings);
+CludoSearch.init();
+})();
+</script>
+<!--End Cludo Search Box Script-->
+
+
+</html>

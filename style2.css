@@ -11,15 +11,36 @@ body, html {
     position: relative;
     height: 100%;
     width: 100%;
+    left: 0;
+    -webkit-transition:  left 0.4s ease-in-out;
+    -moz-transition:  left 0.4s ease-in-out;
+    -ms-transition:  left 0.4s ease-in-out;
+    -o-transition:  left 0.4s ease-in-out;
+    transition:  left 0.4s ease-in-out;
+}
+.container.open-sidebar {
+    left: 240px;
 }
  
-#sidebar {
+.swipe-area {
     position: absolute;
+    width: 50px;
+    left: 0;
+	top: 0;
+    height: 100%;
+    background: rgb(21, 21, 21);
+    z-index: 0;
+}
+#sidebar {
     background: #048734;
+    position: absolute;
     width: 240px;
     height: 100%;
+    left: -240px;
     box-sizing: border-box;
-   -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	display:block;
+	margin: auto;
 }
 #sidebar ul {
     margin: 0;
@@ -43,7 +64,52 @@ body, html {
     transition:  background 0.3s ease-in-out;
 }
 #sidebar ul li:hover a {
-    background: #C9223D;
+    background: #03722c;
+}
+.main-content {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+}
+.main-content .content{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+	padding-left: 60px;
+	width: 100%;
+}
+.main-content .content h1{
+    font-weight: 100;
+	background-color: background-color: rgb(21, 21, 21);
+font-family: 'Merriwather', serif;
+font-size: 26px;
+text-align: center;
+padding: -10px;
+}
+.main-content .content p{
+    width: 100%;
+    line-height: 160%;
+}
+.main-content #sidebar-toggle {
+    background: rgb(21, 21, 21);
+    border-radius: 3px;
+    display: block;
+    position: relative;
+    padding: 10px 7px;
+    float: left;
+}
+.main-content #sidebar-toggle .bar{
+     display: block;
+    width: 36px;
+    margin-bottom: 6px;
+    height: 4px;
+    background-color: #048734;
+       
+}
+.main-content #sidebar-toggle .bar:last-child{
+     margin-bottom: 0;   
 }
 /* End Sidebar Style */
 
@@ -57,7 +123,15 @@ font-size: 18px;
 h1 {
 color: white;
 background-color: background-color: rgb(21, 21, 21);
-font-family: 'Open Sans', sans-serif;
+font-family: 'Merriwather', serif;
+font-size: 26px;
+text-align: center;
+}
+
+h2 {
+color: white;
+background-color: background-color: rgb(21, 21, 21);
+font-family: 'Merriwather', serif;
 font-size: 26px;
 text-align: center;
 }
@@ -100,4 +174,12 @@ color: rgb(229,229,64);
 font-family: 'Arimo', sans-serif;
 font-size: 16px;
 text-decoration: none; 
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12%;
+	padding: -10px;
 }
